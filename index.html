@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="/images/favicon.ico" rel="icon" type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <title>David Archuleta</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>David Archuleta</h1>
+        <h2>Cactus Superstar</h2>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container grid about-head p-4">
+        <div>
+          <h2 class="xl">Who Is He?</h2>
+          <div class="about-text">
+            <p>
+              David Archuleta isn't just any cactus, he's the real deal. Though he
+              shares the namesake of the former American Idol contestant, this David
+              is far from a runner-up.
+            </p>
+          </div>
+        </div>
+        <img src="images/david_icon.png" alt="David being a cute lil' cactus" />
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <div class="skill right-overlap">
+          <img src="./images/david_sing.png" alt="David singin' the blues">
+          <div class="card text-center">
+            <h2 class="lg">SINGER</h2>
+            <button class="btn"><a href="https://www.youtube.com/watch?v=LkesIsPGlSU" target="_blank" rel="noreferrer noopener">New Single</a></button>
+          </div>
+        </div>
+        <div class="skill left-overlap">
+          <img src="./images/david_outside.png" alt="David being absolutely iconic">
+          <div class="card lg text-center">
+            <h2 class="lg">INFLUENCER</h2>
+            <button class="btn"><a href="https://thecactusbrand.co/" target="_blank" rel="noreferrer noopener">Clothing Brand</a></button>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="./images/david_bike.png" alt="David on his bike">
+          <div class="card lg text-center">
+            <h2 class="lg">ATHLETE</h2>
+            <button class="btn"><a href="https://www.letour.fr/en/landing-page" target="_blank" rel="noreferrer noopener">Next Event</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <h2 class="xl">Ask David</h2>
+        <p class="lead">Click a question to see his answer</p>
+        <div class="grid">
+          <div class="questions card">
+            <h3
+            data-toggle="close"
+            data-target="#close1"
+            >
+              Q: "Wait you aren't the real David Archuleta?"
+            </h3>
+            <div id="close1" class="close">
+              <p>
+                David: "Yes, yes, I get this question a lot, probably my most asked
+                question. I am in fact, not the human version of David Archuleta,
+                but I like to think my friend Alex gave me his name because I too am
+                a teenage heartthrob."
+              </p>
+            </div>
+            <h3
+                data-toggle="close"
+                data-target="#close2"
+                >
+                Q: "Are you staying hydrated?"
+              </h3>
+              <div id="close2" class="close">
+                <p>
+                  David: "Oh. I'm ALWAYS hydrated! Even if Alex forgets to give me a
+                  sip every once in a while (which... is unfortunately quite often...
+                  we're working on it) I always have a lot more water stored in my
+                  lil' bod."
+                </p>
+              </div>
+              <h3
+              data-toggle="close"
+              data-target="#close3"
+              >
+              Q: "What kind of cactus are you?"
+            </h3>
+            <div id="close3" class="close">
+              <p">David: *shrugs in plant*</p>
+              </div>
+              <h3
+              data-toggle="close"
+              data-target="#close4"
+              >
+              Q: "Is it true what they said about you on TikTok?"
+            </h3>
+            <div id="close4" class="close">
+              <p>
+                David: "I think people aren't taking the term 'industry plant'
+                literally enough."
+              </p>
+            </div>
+          </div>
+          <div class="actually-ask card">
+            <h3 class="md">Got A Question?</h3>
+            <form
+            action="https://formspree.io/f/mqknygdl"
+            method="POST"
+            class="ask-form"
+            >
+              <label>
+                <input type="email" name="email" placeholder="Email" required>
+              </label>
+              <label>
+                <textarea name="message" placeholder="Question" required></textarea>
+              </label>
+              <button class="btn" type="submit">Ask</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <footer class="footer py-2">
+      <div class="container grid grid-3">
+        <div>
+          <h1>Designed by Alex</h1>
+          <p>Copyright &copy; 2022</p>
+        </div>
+      </div>
+    </footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+  </html>
+  

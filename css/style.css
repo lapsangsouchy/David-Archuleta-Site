@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-family: inherit;
+}
+
+/* Hero */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/davidhero.png');
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-family: 'Futura', sans-serif;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  position: relative;
+  top: 10%;
+}
+
+.hero-text h1 {
+  font-size: 6rem;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+}
+
+/* About */
+
+.about .grid {
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+}
+
+.about-head {
+  background-color: rgb(200, 239, 200);
+}
+
+.about-head img {
+  width: 200px;
+  justify-self: flex-end;
+}
+
+.about-text {
+  background-color: rgba(255, 255, 255, 0.817);
+  font-size: 22px;
+  padding: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.about-photo {
+  height: 75%;
+}
+
+/* Skills */
+
+.skills {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.skill {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill .card {
+  transform: translate(-50%);
+}
+
+.skills img {
+  width: 75%;
+  max-height: 600px;
+}
+
+.left-overlap img {
+  order: 1;
+}
+
+.left-overlap .card {
+  transform: translate(50%);
+}
+
+.skills .flex :nth-child(even) {
+  justify-self: flex-end;
+}
+
+/* Ask David */
+
+.faq {
+  margin: 0 auto;
+  /* height: 100%; */
+  background-color: rgb(234, 243, 154);
+}
+
+.questions {
+  margin-top: 2rem;
+}
+
+.questions h3 {
+  cursor: pointer;
+}
+
+.close {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.close.show {
+  max-height: 99em;
+  transition: max-height 1.5s ease-in-out;
+}
+
+.close p {
+  margin: 12px;
+}
+
+.block {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.block .a {
+  height: 100%;
+}
+
+.ask-form input,
+.ask-form textarea {
+  padding: 3px;
+  border: 0;
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.ask-form input {
+  border-bottom: 1px solid #b4becb;
+  margin-top: 10px;
+}
+
+.ask-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.ask-form input:focus,
+.ask-form textarea:focus {
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .about .grid,
+  .faq .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .about-head {
+    text-align: center;
+  }
+
+  .about-head h2 {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .about-head img {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .skill {
+    flex-direction: column;
+  }
+
+  .skill .card {
+    width: 75%;
+    transform: translateY(-50%);
+  }
+
+  .left-overlap img {
+    order: 0;
+  }
+}

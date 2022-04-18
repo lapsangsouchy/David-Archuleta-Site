@@ -119,7 +119,7 @@ a {
 
 .faq {
   margin: 0 auto;
-  /* height: 100%; */
+  padding-bottom: 2rem;
   background-color: rgb(234, 243, 154);
 }
 
